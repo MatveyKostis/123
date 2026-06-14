@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>PhotoKeeper</title>
+</head>
+<body>
+    <header>
+        <div class="mainMenuContainer">
+            <div class="menuTriger">
+                <div class="menuTrigerLines"></div>
+            </div>
+            <nav class="mainMenu">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Favorites">Favorites</a></li>
+                    <li><a href="#Settings">Settings</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="headerContentContainer">
+            <h1>Photokeeper</h1>
+            <img class="cameraButton" src="../static/img/camera.png" alt="camera">
+            <p class="headerComment">Find something special</p>
+        </div>
+    </header>
+
+<main>
+        <section class="picturesContainer">
+        </section>
+<section class="openedPictureContainer hidden">
+    <div class="openedPicture">
+        <img src="../static/img/close.png" class="closeButton">
+        <img src="" class="openedPictureImg">
+        <div class="openedPictureDescription">
+            <div class="descriptionText"></div>
+            <div class="openedPictureStatus">
+                <img src="../static/img/heart.png">
+                <span class="openedPictureStars"></span>
+                <img src="../static/img/comment.png">
+                <span class="openedPictureComments"></span>
+            </div>
+        </div>
+        <div class="openedPictureCommentsContainer">
+        </div>
+    </div>
+</section>
+</main>
+<template id="templatePictureExample">
+    <div class="pictureExample">
+        <img src="" class="pictureImg">
+        <div class="pictureStatus">
+            <img src="../static/img/heart.png">
+            <span class="pictureStars"></span>
+            <img src="../static/img/comment.png">
+            <span class="pictureComments"></span>
+        </div>
+    </div>
+</template>
+<template id="templateComment">
+    <div class="commentBlock">
+        <p class="commentAuthor"></p>
+        <p class="commentText"></p>
+    </div>
+</template>
+<script src="../static/script.js"></script>
